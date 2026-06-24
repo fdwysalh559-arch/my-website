@@ -1,29 +1,60 @@
-<html>
-<head>
-<link rel="stylesheet" href="style.css">
-  <title>موقع الدفعه الاول علوم رياضيه </title>
-</head>
-<bodybackground-color: #ffe6f0;>
-  <h1>مرحباً 👋</h1>
-  <p> مرحبا بكم فى موقعى الاول </p>
-<img src="Fofo.jpg" alt="صورتى" width="300">
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-<title>تسجيل الدخول</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>موقع الدفعة الأولى - علوم رياضية</title>
 </head>
+<body style="background-color: #ffe6f0;">
 
-<body>
+    <!-- القسم الأول: الترحيب والملفات -->
+    <h1>مرحبا 👋</h1>
+    <p>مرحبا بكم في موقعنا الأول</p>
+    <img src="foff.jpg" alt="صورتي" width="300">
 
-<h2>تسجيل الدخول</h2>
+    <hr> <!-- خط فاصل بين الأقسام -->
 
-<label>الاسم:</label>
-<input type="text" id="name">
+    <!-- القسم الثاني: نموذج تسجيل الدخول -->
+    <h2>تسجيل الدخول</h2>
+    
+    <label>:الاسم</label>
+    <input type="text" id="name">
+    <br><br>
+    
+    <label>:الرقم السري</label>
+    <input type="password" id="password">
+    <br><br>
+    
+    <button onclick="showData()">عرض</button>
+    <p id="result"></p>
 
-<br><br>
+    <hr>
 
-<label>الرقم السري:</label>
-<input type="password" id="password">
+    <!-- القسم الثالث: نبذة عن المشروع -->
+    <div>
+        <h2>نبذة عن المشروع</h2>
+        <p>هذا المشروع في العلوم الرياضية</p>
+    </div>
+
+    <!-- القسم الرابع: الإهداء -->
+    <div class="ehdaa">
+        <h2>إهداء 🌸</h2>
+        <p>إلى زملائنا الذين بدأوا معنا الطريق، وجمعنا بهم الإخاء والضحك، والخوف والتعب، والتوتر والحزن والفرح والنجاح... و حانت بهم الظروف دون إكمال...</p>
+    </div>
+
+    <!-- كود الجافا سكريبت للزر -->
+    <script>
+        function showData() {
+            let name = document.getElementById("name").value;
+            let pass = document.getElementById("password").value;
+            
+            document.getElementById("result").innerHTML = 
+                "الاسم: " + name + "<br>" + "الرقم السري: " + pass;
+        }
+    </script>
+
+</body>
+</html>
 
 <br><br>
 
